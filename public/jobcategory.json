@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "logo": "<FontAwesomeIcon icon={faFileInvoice} />",
+        "job":"Account & Finance",
+        "available": "300 jobs available"
+    },
+    {
+        "id": 2,
+        "logo": "<FontAwesomeIcon icon={faLightbulb} />",
+        "job":"Creative Design",
+        "available": "100+ jobs available"
+    },
+    {
+        "id": 3,
+        "logo": "<FontAwesomeIcon icon={faChartLine} />",
+        "job":"Marketing & Sales",
+        "available": "150 jobs available"
+    },
+    {
+        "id": 4,
+        "logo": "<FontAwesomeIcon icon={faMicrochip} />",
+        "job":"Engineering Job",
+        "available": "224 jobs available"
+    }
+]
