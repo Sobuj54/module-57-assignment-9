@@ -1,13 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFileInvoice,
-  faLightbulb,
-  faChartLine,
-  faMicrochip,
-} from "@fortawesome/free-solid-svg-icons";
 
-const JobCategory = () => {
+import JobCategoryDetails from "../JobCategoryDetails/JobCategoryDetails";
+
+const JobCategory = ({ jobs }) => {
   return (
     <div className="w-4/5 mx-auto mt-20">
       {/* job category heading and description */}
@@ -19,7 +14,11 @@ const JobCategory = () => {
         </p>
       </div>
       {/* available jobs */}
-      <div></div>
+      <div className="md:flex justify-between mt-10 content-center">
+        {jobs.map((job) => (
+          <JobCategoryDetails key={job.id} job={job}></JobCategoryDetails>
+        ))}
+      </div>
     </div>
   );
 };
