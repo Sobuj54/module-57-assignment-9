@@ -7,7 +7,14 @@
         "jobtype1":"Remote",
         "jobtype2":"Full Time",
         "location":"California, USA",
-        "salary": "100k - 150k"
+        "salary": "100k - 150k",
+        "description":"A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility":"Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "requirements": "Bachelor degree to complete any reputational university.",
+        "experience":"2-3 Years in this field.",
+        "phone":"021549842",
+        "email": "yahoo@gmail.com",
+        "address":"Dhanmondi 15, Dhaka"
     },
     {
         "id": 2,
@@ -17,7 +24,14 @@
         "jobtype1":"Onsite",
         "jobtype2":"Full Time",
         "location":"NewYork, USA",
-        "salary": "90k - 130k"
+        "salary": "90k - 130k",
+        "description":"A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility":"Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "requirements": "Bachelor degree to complete any reputational university.",
+        "experience":"2-3 Years in this field.",
+        "phone":"021549842",
+        "email": "yahoo@gmail.com",
+        "address":"Dhanmondi 15, Dhaka"
     },
     {
         "id": 3,
@@ -27,7 +41,14 @@
         "jobtype1":"Onsite",
         "jobtype2":"Full Time",
         "location":"LA, USA",
-        "salary": "110k - 140k"
+        "salary": "110k - 140k",
+        "description":"A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility":"Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "requirements": "Bachelor degree to complete any reputational university.",
+        "experience":"2-3 Years in this field.",
+        "phone":"021549842",
+        "email": "yahoo@gmail.com",
+        "address":"Dhanmondi 15, Dhaka"
     },
     {
         "id": 4,
@@ -37,7 +58,14 @@
         "jobtype1":"Remote",
         "jobtype2":"Full Time",
         "location":"Washington, USA",
-        "salary": "110k - 160k"
+        "salary": "110k - 160k",
+        "description":"A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility":"Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "requirements": "Bachelor degree to complete any reputational university.",
+        "experience":"2-3 Years in this field.",
+        "phone":"021549842",
+        "email": "yahoo@gmail.com",
+        "address":"Dhanmondi 15, Dhaka"
     },
     {
         "id": 5,
@@ -47,7 +75,14 @@
         "jobtype1":"Onsite",
         "jobtype2":"Full Time",
         "location":"NewYork, USA",
-        "salary": "100k - 150k"
+        "salary": "100k - 150k",
+        "description":"A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility":"Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "requirements": "Bachelor degree to complete any reputational university.",
+        "experience":"2-3 Years in this field.",
+        "phone":"021549842",
+        "email": "yahoo@gmail.com",
+        "address":"Dhanmondi 15, Dhaka"
     },
     {
         "id": 6,
@@ -57,6 +92,13 @@
         "jobtype1":"Remote",
         "jobtype2":"Full Time",
         "location":"California, USA",
-        "salary": "100k - 150k"
+        "salary": "100k - 150k",
+        "description":"A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility":"Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "requirements": "Bachelor degree to complete any reputational university.",
+        "experience":"2-3 Years in this field.",
+        "phone":"021549842",
+        "email": "yahoo@gmail.com",
+        "address":"Dhanmondi 15, Dhaka"
     }
 ]

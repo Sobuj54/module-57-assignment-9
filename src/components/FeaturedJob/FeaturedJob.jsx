@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { JobsContext } from "../Layout/Layout";
 
 const FeaturedJob = ({ job }) => {
-  // received handleViewDetails using context api
+  // this is used to send data as params
   const navigate = useNavigate();
   const openDetails = (id) => {
     navigate(`/details/${id}`);
