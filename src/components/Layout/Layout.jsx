@@ -1,22 +1,32 @@
 import React, { createContext, useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Header from "../Header/Header";
 // step1 create and export the context
 export const JobsContext = createContext();
 
 const Layout = () => {
-  const [jobs, setJobs] = useState([]);
+  const jobs = useLoaderData();
+  const savedJobs = [...jobs];
+  console.log(savedJobs);
 
-  useEffect(() => {
-    fetch("featuredjobs.json")
-      .then((res) => res.json())
-      .then((data) => setJobs(data));
-  }, []);
+  const [renderJobs, setRenderJobs] = useState(jobs);
+
+  const handleShowLess = (jobs) => {
+    const reducedJobs = renderJobs.slice(0, 4);
+    setRenderJobs(reducedJobs);
+  };
+
+  const handleShowAllJobs = (jobs) => {
+    const allJobs = [...savedJobs];
+    setRenderJobs(allJobs);
+  };
 
   return (
     <div>
       {/* step 2 set context provider */}
-      <JobsContext.Provider value={jobs}>
+      {/* send data in an array */}
+      <JobsContext.Provider
+        value={[renderJobs, handleShowAllJobs, handleShowLess]}>
         <Header></Header>
         <Outlet></Outlet>
       </JobsContext.Provider>

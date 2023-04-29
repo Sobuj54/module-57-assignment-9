@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { JobsContext } from "../Layout/Layout";
 import FeaturedJob from "../FeaturedJob/FeaturedJob";
 
 const FeaturedJobs = () => {
   // step 3 receive data by using useContext
-  const jobs = useContext(JobsContext);
+  //   received data form context by destructuring
+  const [jobs, handleShowAllJobs, handleShowLess] = useContext(JobsContext);
 
   return (
     <div className="w-4/5 mx-auto mt-20 md:mt-40">
@@ -19,6 +20,18 @@ const FeaturedJobs = () => {
         {jobs.map((job) => (
           <FeaturedJob key={job.id} job={job}></FeaturedJob>
         ))}
+      </div>
+      <div className="text-center">
+        <button
+          onClick={() => handleShowAllJobs(jobs)}
+          className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-7">
+          See All Jobs
+        </button>
+        <button
+          onClick={() => handleShowLess(jobs)}
+          className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-7">
+          Show Less
+        </button>
       </div>
     </div>
   );
