@@ -7,6 +7,13 @@ const FeaturedJobs = () => {
   //   received data form context by destructuring
   const [jobs, handleShowAllJobs, handleShowLess] = useContext(JobsContext);
 
+  let isMore;
+  if (jobs.length > 4) {
+    isMore = true;
+  } else {
+    isMore = false;
+  }
+
   return (
     <div className="w-4/5 mx-auto mt-20 md:mt-40">
       <h2 className="text-4xl font-bold text-center">Featured Jobs</h2>
@@ -21,15 +28,23 @@ const FeaturedJobs = () => {
           <FeaturedJob key={job.id} job={job}></FeaturedJob>
         ))}
       </div>
-      <div className="text-center">
+
+      {/* button container */}
+      <div className="flex flex-col w-4/6 md:w-1/6 mx-auto">
+        {/* show all button */}
         <button
-          onClick={() => handleShowAllJobs(jobs)}
-          className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-7">
+          onClick={handleShowAllJobs}
+          className={`py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-7 ${
+            isMore ? "hidden" : "block"
+          }`}>
           See All Jobs
         </button>
+        {/* show less button */}
         <button
-          onClick={() => handleShowLess(jobs)}
-          className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-7">
+          onClick={handleShowLess}
+          className={`py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-7 ${
+            isMore ? "block" : "hidden"
+          }`}>
           Show Less
         </button>
       </div>

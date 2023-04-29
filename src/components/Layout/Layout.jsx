@@ -7,16 +7,15 @@ export const JobsContext = createContext();
 const Layout = () => {
   const jobs = useLoaderData();
   const savedJobs = [...jobs];
-  console.log(savedJobs);
 
   const [renderJobs, setRenderJobs] = useState(jobs);
 
-  const handleShowLess = (jobs) => {
+  const handleShowLess = () => {
     const reducedJobs = renderJobs.slice(0, 4);
     setRenderJobs(reducedJobs);
   };
 
-  const handleShowAllJobs = (jobs) => {
+  const handleShowAllJobs = () => {
     const allJobs = [...savedJobs];
     setRenderJobs(allJobs);
   };
