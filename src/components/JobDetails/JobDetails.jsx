@@ -12,8 +12,10 @@ const JobDetails = () => {
 
   return (
     // job details container
-    <div className="w-4/5 mx-auto mt-32 mb-11">
-      <h1 className="text-3xl font-bold text-center mb-24">Job Details</h1>
+    <div className="w-4/5 mx-auto mt-10 md:mt-32  md:mb-11">
+      <h1 className="text-3xl font-bold text-center mb-10 md:mb-24">
+        Job Details
+      </h1>
 
       {/* job description section */}
       <div className="md:flex justify-between gap-7">
@@ -41,7 +43,7 @@ const JobDetails = () => {
           </h1>
         </div>
         {/* job details in side bar */}
-        <div className="w-full bg-blue-100 rounded-md p-4">
+        <div className="w-full bg-blue-100 rounded-md p-4 mt-6 md:mt-0">
           <h5 className="text-lg font-semibold mb-5">Job Details</h5>
           <hr />
           <p>
