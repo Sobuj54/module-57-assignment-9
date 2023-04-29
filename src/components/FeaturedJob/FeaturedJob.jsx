@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
 const FeaturedJob = ({ job }) => {
   return (
@@ -17,7 +19,11 @@ const FeaturedJob = ({ job }) => {
 
       {/* location and salary */}
       <p className="mt-3">
-        <span>{job.location}</span> <span className="ml-3">{job.salary}</span>
+        <FontAwesomeIcon icon={faLocationDot} />
+        <span className="ml-1 mr-5">{job.location}</span>
+
+        <FontAwesomeIcon icon={faDollarSign} />
+        <span className="ml-1">{job.salary}</span>
       </p>
 
       <button className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-3">
