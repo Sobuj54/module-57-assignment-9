@@ -21,7 +21,7 @@ const User = () => {
       </div>
       <div className="mt-5 md:mt-0">
         <img
-          src="../../../public/userImg/1c745d5dd67771ef57a63c2890a0bd03b150e417e663d4efb8bd34ed529f3f96.png"
+          src="https://imgdb.net/storage/uploads/1c745d5dd67771ef57a63c2890a0bd03b150e417e663d4efb8bd34ed529f3f96.png"
           alt=""
         />
       </div>
