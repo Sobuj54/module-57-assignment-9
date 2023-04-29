@@ -15,7 +15,7 @@ const FeaturedJobs = () => {
   }
 
   return (
-    <div className="w-4/5 mx-auto mt-20 md:mt-40">
+    <div className="w-4/5 mx-auto mt-20 md:mt-40 mb-8">
       <h2 className="text-4xl font-bold text-center">Featured Jobs</h2>
       <p className="text-center mt-4">
         Explore thousands of job opportunities with all the information you
@@ -34,6 +34,7 @@ const FeaturedJobs = () => {
         {/* show all button */}
         <button
           onClick={handleShowAllJobs}
+          //   we have conditional css rendering here
           className={`py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-7 ${
             isMore ? "hidden" : "block"
           }`}>
@@ -42,10 +43,11 @@ const FeaturedJobs = () => {
         {/* show less button */}
         <button
           onClick={handleShowLess}
+          //   conditional css rendering here
           className={`py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md mt-4 md:mt-7 ${
             isMore ? "block" : "hidden"
           }`}>
-          Show Less
+          Show Less Jobs
         </button>
       </div>
     </div>
