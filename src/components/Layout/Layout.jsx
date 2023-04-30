@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import { Outlet, useLoaderData } from "react-router-dom";
 import Header from "../Header/Header";
+
 // step1 create and export the context
 export const JobsContext = createContext();
 

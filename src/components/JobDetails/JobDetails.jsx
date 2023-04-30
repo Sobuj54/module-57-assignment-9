@@ -1,14 +1,20 @@
 import React, { useContext } from "react";
-import { JobsContext } from "../Layout/Layout";
-import { useLoaderData, useParams } from "react-router-dom";
+
+import { Link, useLoaderData, useParams } from "react-router-dom";
+import { addToDb } from "../FakeDB/FakeDb";
 
 const JobDetails = () => {
   const details = useLoaderData();
+
+  const storeInDb = (id) => {
+    addToDb(id);
+  };
   //   console.log(details);
   // using params to receive data
   let params = useParams();
 
   const jobDetail = details.find((job) => job.id == params.detailsId);
+  console.log(jobDetail);
 
   return (
     // job details container
@@ -70,7 +76,9 @@ const JobDetails = () => {
           </p>
 
           <div className="mt-7">
-            <button className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md w-full ">
+            <button
+              onClick={() => storeInDb(jobDetail.id)}
+              className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md w-full ">
               Apply Now
             </button>
           </div>
