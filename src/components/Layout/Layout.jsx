@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import { Outlet, useLoaderData } from "react-router-dom";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 // step1 create and export the context
 export const JobsContext = createContext();
@@ -30,6 +31,7 @@ const Layout = () => {
         value={[renderJobs, handleShowAllJobs, handleShowLess]}>
         <Header></Header>
         <Outlet></Outlet>
+        <Footer></Footer>
       </JobsContext.Provider>
     </div>
   );

@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import AppliedJobsDetails from "../AppliedJobsDetails/AppliedJobsDetails";
 
 const AppliedJobs = () => {
-  // received data via loader
+  // received data via loader from json file
   const featuredJobs = useLoaderData();
   // retrieve data from local storage
   const savedJobs = getShoppingCart();
@@ -21,6 +21,7 @@ const AppliedJobs = () => {
       <h2 className="text-4xl text-center font-bold">
         Applied Jobs : {matchedJobs.length}
       </h2>
+
       {/* applied jobs details */}
       <div className=" mt-12 md:mt-36">
         {matchedJobs.map((job) => (
