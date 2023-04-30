@@ -7,8 +7,9 @@ export const JobsContext = createContext();
 const Layout = () => {
   const jobs = useLoaderData();
   const savedJobs = [...jobs];
+  const reducedJobs = jobs.slice(0, 4);
 
-  const [renderJobs, setRenderJobs] = useState(jobs);
+  const [renderJobs, setRenderJobs] = useState(reducedJobs);
 
   const handleShowLess = () => {
     const reducedJobs = renderJobs.slice(0, 4);
