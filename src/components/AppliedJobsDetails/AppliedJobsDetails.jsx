@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const AppliedJobsDetails = ({ job }) => {
   return (
@@ -30,9 +31,13 @@ const AppliedJobsDetails = ({ job }) => {
           <span>{job.salary}</span>
         </p>
       </div>
-      <button className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md md:mt-0 mt-2">
-        View Details
-      </button>
+
+      {/* this link is used to go to the job detail path */}
+      <Link to={`/details/${job.id}`}>
+        <button className="py-2 px-4 bg-[#7E90FE] text-white font-semibold rounded-md md:mt-0 mt-2">
+          View Details
+        </button>
+      </Link>
     </div>
   );
 };
