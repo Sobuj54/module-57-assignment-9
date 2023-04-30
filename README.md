@@ -6,3 +6,5 @@
 * Statistics link shows us the statistic of assignment marks.
 * Applied jobs link shows us all the jobs we have applied so far.
 * Blog link gives us answers of few questions.
+
+[a link](https://644ea18c62fef571f2b9900f--remarkable-torte-c765b5.netlify.app/)
