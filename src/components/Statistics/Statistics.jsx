@@ -45,7 +45,7 @@ const Statistics = () => {
       marks: 42,
     },
   ];
-  //  width={1100} height={400}
+
   return (
     <div className="w-4/5 mx-auto md:mt-24">
       <h3 className="text-2xl font-semibold text-center mb-10">
@@ -53,14 +53,21 @@ const Statistics = () => {
       </h3>
       {/* <h2 className="text-3xl">this is statistics</h2> */}
       {/* must provide width, height, and data otherwise it will not work */}
-
-      <AreaChart width={1100} height={400} data={AssignmentMarks}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Area type="monotone" dataKey="marks" stroke="#8884d8" fill="#8884d8" />
-      </AreaChart>
+      {/* used responsive container with percentage to make chart responsive */}
+      <ResponsiveContainer width="100%" height={400}>
+        <AreaChart data={AssignmentMarks}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Area
+            type="monotone"
+            dataKey="marks"
+            stroke="#8884d8"
+            fill="#8884d8"
+          />
+        </AreaChart>
+      </ResponsiveContainer>
     </div>
   );
 };

@@ -15,7 +15,6 @@ const AppliedJobs = () => {
     let foundJobs = featuredJobs.find((job) => job.id == id);
     matchedJobs.push(foundJobs);
   }
-  console.log(matchedJobs);
 
   return (
     <div className="w-4/5 mx-auto mt-11 md:mt-28">
