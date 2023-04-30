@@ -18,12 +18,12 @@ const AppliedJobs = () => {
   console.log(matchedJobs);
 
   return (
-    <div className="w-4/5 mx-auto md:mt-28">
+    <div className="w-4/5 mx-auto mt-11 md:mt-28">
       <h2 className="text-4xl text-center font-bold">
         Applied Jobs : {matchedJobs.length}
       </h2>
       {/* applied jobs details */}
-      <div className="md:mt-36">
+      <div className=" mt-12 md:mt-36">
         {matchedJobs.map((job) => (
           <AppliedJobsDetails key={job.id} job={job}></AppliedJobsDetails>
         ))}
