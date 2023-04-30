@@ -14,7 +14,6 @@ const JobDetails = () => {
   let params = useParams();
 
   const jobDetail = details.find((job) => job.id == params.detailsId);
-  console.log(jobDetail);
 
   return (
     // job details container
