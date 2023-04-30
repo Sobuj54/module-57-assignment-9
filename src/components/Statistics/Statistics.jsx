@@ -47,7 +47,7 @@ const Statistics = () => {
   ];
 
   return (
-    <div className="w-4/5 mx-auto md:mt-24">
+    <div className="w-4/5 mx-auto md:mt-24 mb-8">
       <h3 className="text-2xl font-semibold text-center mb-10">
         Assignment Marks Statistics (Area Responsive Container)
       </h3>
