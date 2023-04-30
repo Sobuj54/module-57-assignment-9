@@ -33,7 +33,7 @@ const JobDetails = () => {
           <h2>
             <span className="text-lg font-medium mr-2">
               Job Responsibility:
-            </span>{" "}
+            </span>
             {jobDetail.responsibility}
           </h2>
           <h3>
